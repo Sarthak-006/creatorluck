@@ -36,7 +36,15 @@ with open('static/css/style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 # Header with improved animation
-st.markdown('<h1 class="game-title">🎲 CreatorLuck</h1>', unsafe_allow_html=True)
+st.markdown("""
+<div class="header-container">
+    <div class="logo-container">
+        <div class="dice-logo">🎲</div>
+        <h1 class="game-title">CreatorLuck</h1>
+    </div>
+    <div class="subtitle">Premium DeFi Gaming on Creator Network</div>
+</div>
+""", unsafe_allow_html=True)
 
 # Add network info
 st.markdown(f"""
