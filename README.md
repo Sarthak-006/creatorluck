@@ -118,18 +118,16 @@ Win: Match + Chance for Progressive Jackpot!
 [![Play Now](https://img.shields.io/badge/PLAY%20NOW-00B1A6?style=for-the-badge&logo=streamlit&logoColor=white)](https://creatorluck.streamlit.app/)
 
 ---
-
-### 🔒 Fair Play Guarantee
+ 
+### 🔒 Fair Play Guarantee (Fake Coins no assets / currency at risk)
 - Blockchain-verified results
 - Real-time number generation
 - Instant payouts
 
-### ⚠️ Play Responsibly
+### ⚠️ Play Responsibly (Fake Coins no assets / currency at risk)
 - Set limits
 - Know when to stop
-- 18+ only
 
-[Terms & Conditions](https://creatorluck.streamlit.app/) | [Privacy Policy](https://creatorluck.streamlit.app/)
 
 ## Technical Details
 
