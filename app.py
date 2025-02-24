@@ -38,9 +38,20 @@ with open('static/css/style.css') as f:
 # Header with improved animation
 st.markdown("""
 <div class="header-container">
-    <div class="logo-container">
-        <div class="dice-logo">🎲</div>
-        <h1 class="game-title">CreatorLuck</h1>
+    <div class="logo-section">
+        <div class="logo-box">
+            <svg class="dice-logo" viewBox="0 0 24 24">
+                <rect x="2" y="2" width="20" height="20" rx="3" fill="#FFFFFF"/>
+                <circle cx="7" cy="7" r="2" fill="#0047AB"/>
+                <circle cx="12" cy="12" r="2" fill="#0047AB"/>
+                <circle cx="17" cy="17" r="2" fill="#0047AB"/>
+                <circle cx="7" cy="17" r="2" fill="#0047AB"/>
+                <circle cx="17" cy="7" r="2" fill="#0047AB"/>
+            </svg>
+        </div>
+        <div class="title-box">
+            <h1 class="game-title">CREATORLUCK</h1>
+        </div>
     </div>
     <div class="subtitle">Premium DeFi Gaming on Creator Network</div>
 </div>
