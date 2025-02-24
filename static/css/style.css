@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+}
+
+.stButton>button {
+    width: 100%;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+    height: 3.5em;
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+}
+
+.stButton>button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);
+    background: linear-gradient(45deg, #FFA500, #FFD700);
+}
+
+.number-display {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFD700;
+    text-align: center;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 215, 0, 0.1);
+    margin: 20px;
+    border: 2px solid rgba(255, 215, 0, 0.2);
+    animation: glow 2s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.2); }
+    50% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.4); }
+    100% { box-shadow: 0 0 5px rgba(255, 215, 0, 0.2); }
+}
+
+.game-title {
+    text-align: center;
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 56px;
+    margin: 40px 0;
+    font-weight: 700;
+    animation: titleGlow 3s ease-in-out infinite;
+    letter-spacing: 3px;
+}
+
+@keyframes titleGlow {
+    0% { text-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
+    50% { text-shadow: 0 0 30px rgba(255, 215, 0, 0.8); }
+    100% { text-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
+}
+
+.stats-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 15px;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2);
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.1);
+}
+
+.result-animation {
+    animation: resultReveal 1.5s ease-out;
+}
+
+@keyframes resultReveal {
+    0% { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+    50% { transform: scale(1.1) rotate(5deg); opacity: 0.8; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+.win-animation {
+    animation: winPulse 1s ease-in-out;
+}
+
+@keyframes winPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.timer-display {
+    font-size: 28px;
+    color: #FFD700;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 215, 0, 0.1);
+    margin: 15px 0;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chart-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 15px 0;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.lucky-number {
+    font-size: 28px;
+    color: #FFD700;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50%;
+    background: rgba(255, 215, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    line-height: 30px;
+    margin: 10px;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+    border: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.trend-indicator {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.hot-number {
+    background: rgba(255, 99, 71, 0.2);
+    color: #ff6347;
+    border: 1px solid rgba(255, 99, 71, 0.3);
+}
+
+.cold-number {
+    background: rgba(100, 149, 237, 0.2);
+    color: #6495ed;
+    border: 1px solid rgba(100, 149, 237, 0.3);
+}
+
+.jackpot-alert {
+    background: linear-gradient(45deg, #FFD700, #FFA500);
+    color: #000;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+    animation: jackpotPulse 2s infinite;
+}
+
+@keyframes jackpotPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.stat-box {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat-box h4 {
+    color: #FFD700;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.odds-display {
+    background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #FFD700;
+    margin-top: 20px;
+}
+
+.odds-display h4 {
+    color: #FFD700;
+    margin-bottom: 5px;
+}
+
+.odds-display p {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.network-info {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    font-size: 14px;
+    color: #FFD700;
+}
+
+.network-info p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .game-title {
+        font-size: 36px;
+    }
+    
+    .number-display {
+        font-size: 24px;
+        padding: 15px;
+    }
+    
+    .stats-card {
+        margin: 10px 5px;
+        padding: 15px;
+    }
+    
+    .feature-card {
+        padding: 20px;
+    }
+    
+    .timer-display {
+        font-size: 20px;
+    }
+    
+    .lucky-number {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 20px;
+    }
+} 
